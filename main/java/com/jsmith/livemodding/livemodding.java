@@ -23,10 +23,16 @@ public class livemodding {
     public static ItemLiveIngot liveIngot;
     public static Block liveBlock;
     public static Block fancyLarge;
+    public static Block fancySmall;
+    public static Block fancyChisel;
 
     //Tools
     public static Item livePickake;
+    public static Item liveShovel;
     public static Item debugTool;
+    public static Item liveAxe;
+    public static Item liveSword;
+    public static Item liveFishingRod;
 
     //materials
     static Item.ToolMaterial liveMaterial = EnumHelper.addToolMaterial("liveMaterial", 3, 750, 7.0F, 2.0F, 15);
@@ -45,6 +51,12 @@ public class livemodding {
         fancyLarge = new BlockFancyLarge();
         RegisterHelper.registerBlock(fancyLarge);
 
+        fancySmall = new BlockFancySmall();
+        RegisterHelper.registerBlock(fancySmall);
+
+        fancyChisel = new BlockFancyChisel();
+        RegisterHelper.registerBlock(fancyChisel);
+
 
 
         //Tools
@@ -54,22 +66,21 @@ public class livemodding {
 
         debugTool = new ItemDebugTool();
         RegisterHelper.registerItem(debugTool);
-        GameRegistry.addRecipe(new ItemStack(livePickake), new Object[]
-                {
-                        "XXX",
-                        " Y ",
-                        " Y ",
-                        'X', liveIngot, 'Y', Items.stick
-                });
-        GameRegistry.addRecipe(new ItemStack(liveBlock), new Object[]{
-                "XXX",
-                "XXX",
-                "XXX",
-                'X', liveIngot
-        });
-        GameRegistry.addShapelessRecipe(new ItemStack(liveIngot,9), new Object[]{
-                liveBlock
-        });
+
+        liveShovel = new ItemLiveShovel(liveMaterial);
+        RegisterHelper.registerItem(liveShovel);
+
+        liveAxe = new ItemLiveAxe(liveMaterial);
+        RegisterHelper.registerItem(liveAxe);
+
+        liveSword = new ItemLiveSword(liveMaterial);
+        RegisterHelper.registerItem(liveSword);
+
+        liveFishingRod = new ItemLiveFishRod();
+        RegisterHelper.registerItem(liveFishingRod);
+
+        Refrence.Recipies();
+
 
 
     }

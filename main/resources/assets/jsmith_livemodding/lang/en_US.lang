@@ -1,4 +1,13 @@
+-Blocks-
 tile.liveOre.name=Live Ore
 tile.liveBlock.name=Block of Live
+tile.largeFancy.name=Fancy Live Block (Large Bricks)
+tile.smallFancy.name=Fancy Live Block (Small Bricks)
+tile.chiselFancy.name=Fancy Live Block (Chiseled)
+
+-Items-
 item.LiveIngot.name=Live Ingot
 item.livePickaxe.name=Live Pickaxe
+item.DebugTool.name=item.DebugTool.name (Does Nothing ATM)
+item.liveShovel.name=Live Shovel
+item._.name=Live _
