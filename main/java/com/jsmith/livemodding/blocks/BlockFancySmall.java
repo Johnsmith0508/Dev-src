@@ -1,9 +1,9 @@
 package com.jsmith.livemodding.blocks;
 
 import com.jsmith.livemodding.help.Refrence;
+import com.jsmith.livemodding.livemodding;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
 
 
 /**
@@ -14,7 +14,7 @@ public class BlockFancySmall extends Block{
         super(Material.rock);
         setBlockName("smallFancy");
         setBlockTextureName(Refrence.MODID + ":" + getUnlocalizedName().substring(5));
-        setCreativeTab(CreativeTabs.tabFood);
+        setCreativeTab(livemodding.tabLiveMod);
         setStepSound(soundTypeStone);
         setHardness(3.0F);
         setResistance(5.0F);

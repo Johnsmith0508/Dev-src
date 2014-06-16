@@ -1,7 +1,7 @@
 package com.jsmith.livemodding.items;
 
+import com.jsmith.livemodding.livemodding;
 import net.minecraft.item.ItemPickaxe;
-import net.minecraft.creativetab.CreativeTabs;
 import com.jsmith.livemodding.help.Refrence;
 
 /**
@@ -12,7 +12,7 @@ public class ItemLivePickaxe extends ItemPickaxe {
         super(material);
         setUnlocalizedName("livePickaxe");
         setTextureName(Refrence.MODID + ":" + getUnlocalizedName().substring(5));
-        setCreativeTab(CreativeTabs.tabFood);
+        setCreativeTab(livemodding.tabLiveModTwo);
 
 
 

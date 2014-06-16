@@ -10,4 +10,11 @@ item.LiveIngot.name=Live Ingot
 item.livePickaxe.name=Live Pickaxe
 item.DebugTool.name=item.DebugTool.name (Does Nothing ATM)
 item.liveShovel.name=Live Shovel
-item._.name=Live _
+item.liveAxe.name=Live Axe
+item.liveSword.name=Live Sword
+item.liveHelmet.name=Live Helmet
+
+
+-Creative Tab(s)-
+itemGroup.liveMod=Live Mod (Blocks)
+itemGroup.liveModTwo=Live Mod (Items)

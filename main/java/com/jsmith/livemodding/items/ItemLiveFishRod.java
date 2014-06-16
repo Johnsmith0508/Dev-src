@@ -1,7 +1,7 @@
 package com.jsmith.livemodding.items;
 
 import com.jsmith.livemodding.help.Refrence;
-import net.minecraft.creativetab.CreativeTabs;
+import com.jsmith.livemodding.livemodding;
 import net.minecraft.item.ItemFishingRod;
 
 /**
@@ -12,7 +12,7 @@ public class ItemLiveFishRod extends ItemFishingRod {
         super();
         setUnlocalizedName("LiveFishingRod");
         setTextureName(Refrence.MODID + ":" + getUnlocalizedName().substring(5));
-        setCreativeTab(CreativeTabs.tabFood);
+        setCreativeTab(livemodding.tabLiveModTwo);
 
     }
 }

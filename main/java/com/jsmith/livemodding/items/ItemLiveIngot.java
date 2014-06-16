@@ -1,6 +1,6 @@
 package com.jsmith.livemodding.items;
 
-import net.minecraft.creativetab.CreativeTabs;
+import com.jsmith.livemodding.livemodding;
 import net.minecraft.item.Item;
 import com.jsmith.livemodding.help.Refrence;
 
@@ -13,6 +13,6 @@ public class ItemLiveIngot extends Item{
         super();
         setUnlocalizedName("LiveIngot");
         setTextureName(Refrence.MODID + ":" + getUnlocalizedName().substring(5));
-        setCreativeTab(CreativeTabs.tabFood);
+        setCreativeTab(livemodding.tabLiveModTwo);
     }
 }

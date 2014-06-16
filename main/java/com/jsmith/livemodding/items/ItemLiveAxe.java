@@ -1,7 +1,7 @@
 package com.jsmith.livemodding.items;
 
+import com.jsmith.livemodding.livemodding;
 import net.minecraft.item.ItemAxe;
-import net.minecraft.creativetab.CreativeTabs;
 import com.jsmith.livemodding.help.Refrence;
 
 /**
@@ -12,7 +12,7 @@ public class ItemLiveAxe extends ItemAxe {
         super(material);
         setUnlocalizedName("liveAxe");
         setTextureName(Refrence.MODID + ":" + getUnlocalizedName().substring(5));
-        setCreativeTab(CreativeTabs.tabFood);
+        setCreativeTab(livemodding.tabLiveModTwo);
 
     }
 }

@@ -2,11 +2,9 @@ package com.jsmith.livemodding.blocks;
 
 import com.jsmith.livemodding.help.Refrence;
 import com.jsmith.livemodding.livemodding;
-import com.sun.org.apache.xml.internal.security.signature.Reference;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
 import java.util.Random;
 
 /**
@@ -31,7 +29,7 @@ public class BlockLiveOre extends Block{
         setBlockName("liveOre");
         //System.out.println("[DEBUG]" + getUnlocalizedName().substring(5));
         setBlockTextureName(Refrence.MODID + ":" + getUnlocalizedName().substring(5));
-        setCreativeTab(CreativeTabs.tabFood);
+        setCreativeTab(livemodding.tabLiveMod);
         setStepSound(soundTypeStone);
         setHardness(3.0F);
         setResistance(5.0F);

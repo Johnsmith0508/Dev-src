@@ -49,6 +49,12 @@ public class Refrence {
                 "Y",
                 'X',livemodding.liveIngot,'Y',Items.stick
         });
+        GameRegistry.addRecipe(new ItemStack(livemodding.liveHelmet), new Object[]{
+                "XXX",
+                "X X",
+                'X', livemodding.liveIngot
+        });
+
         GameRegistry.addShapelessRecipe(new ItemStack(livemodding.liveIngot,9), new Object[]{livemodding.liveBlock});
         GameRegistry.addShapelessRecipe(new ItemStack(livemodding.fancySmall), new Object[]{livemodding.fancyLarge});
         GameRegistry.addShapelessRecipe(new ItemStack(livemodding.fancyChisel), new Object[]{livemodding.fancySmall});
